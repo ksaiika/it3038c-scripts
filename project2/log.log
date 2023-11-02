@@ -1,0 +1,2 @@
+Oct 30 20:25:57 kim2ks-centos kernel: [drm:vmw_kms_check_display_memory [vmwgfx]] *ERROR* Combined output size too large.
+Nov 01 17:30:35 kim2ks-centos kernel: warning: `gvfsd-admin' uses 32-bit capabilities (legacy support in use)
