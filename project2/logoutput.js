@@ -2,13 +2,13 @@ const express = require("express");
 const fs = require("fs");
 
 const app = express();
-const port = 3000;
+const portNum = 3000;
 
-const logFilePath = "/home/cechuser/it3038c-scripts/project2/log.log";
+const logFile = "/home/cechuser/it3038c-scripts/project2/log.log";
 
 app.get("/", (req, res) => {
 
-	fs.readFile(logFilePath, "utf8", (err, data) => {
+	fs.readFile(logFile, "utf8", (err, data) => {
 		if (err) {
 			res.status(500).send("Error");
 		}	else {
@@ -18,6 +18,6 @@ app.get("/", (req, res) => {
 	});
 });
 
-app.listen(port, () => {
-	console.log(`Log file view running on http://localhost:${port}`);
+app.listen(portNum, () => {
+	console.log(`Log file view running on http://localhost:${portNum}`);
 });
